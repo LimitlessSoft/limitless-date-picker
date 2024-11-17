@@ -19,7 +19,7 @@
   },
   "author": "LimitlessSoft",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -32,5 +32,8 @@
     "rollup": "^2.79.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-postcss": "^4.0.2"
-  }
+  },
+  "workspaces": [
+    "sample-apps/*"
+  ]
 }

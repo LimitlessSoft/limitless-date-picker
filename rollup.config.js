@@ -7,7 +7,7 @@ export default {
     input: 'src/index.jsx',
     output: {
         file: 'dist/index.js',
-        format: 'cjs', // CommonJS format for NPM
+        format: 'module',
         exports: 'named',
     },
     plugins: [

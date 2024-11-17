@@ -1,0 +1,47 @@
+.ls-date-picker-wrapper {
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+.ls-date-picker-inner
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ls-date-picker-calendar-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ls-date-picker-calendar-header-left, .ls-date-picker-calendar-header-right {
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.ls-date-picker-calendar-header-left svg, .ls-date-picker-calendar-header-right svg {
+    width: 18px;
+    height: 18px;
+    transition-duration: 0.1s;
+}
+
+.ls-date-picker-calendar-header-left:hover svg, .ls-date-picker-calendar-header-right:hover svg {
+    fill: #999;
+}
+
+.ls-date-picker-calendar-header-left:hover, .ls-date-picker-calendar-header-right:hover {
+    cursor: pointer;
+}
+
+.ls-date-picker-calendar-header-center {
+    font-size: 18px;
+    font-weight: bold;
+    transform: translateY(-2px);
+}
