@@ -1,0 +1,29 @@
+{
+  "name": "limitless-date-picker",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Simple date picker component",
+  "source": "./src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LimitlessSoft/limitless-date-picker.git"
+  },
+  "keywords": [
+    "date",
+    "picker",
+    "component",
+    "limitless"
+  ],
+  "author": "LimitlessSoft",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
