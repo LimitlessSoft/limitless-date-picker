@@ -4,7 +4,7 @@ import { LSDatePicker } from 'limitless-date-picker'
 function App() {
     return (
         <div className="App">
-            <LSDatePicker />
+            <LSDatePicker style={{}} />
         </div>
     )
 }
