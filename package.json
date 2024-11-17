@@ -1,6 +1,6 @@
 {
   "name": "limitless-date-picker",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
   "description": "Simple date picker component",
   "source": "./src/index.js",
@@ -9,7 +9,7 @@
   "unpkg": "./dist/index.umd.js",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle"
   },
   "repository": {
     "type": "git",
