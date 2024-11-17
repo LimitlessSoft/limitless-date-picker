@@ -1,9 +1,7 @@
-import './styles/ls-date-picker-dark.css'
-import './styles/ls-date-picker-standard.css'
-
 export const LSDatePicker = (props) => {
     const style = props?.style ?? {}
     const headerText = props?.headerText
+    const theme = props?.theme ?? `standard`
     if (!style.backgroundColor) style.backgroundColor = `#f0f0f0`
     if (!style.border) style.border = `1px solid #ccc`
     if (!style.borderRadius) style.borderRadius = `4px`
@@ -12,7 +10,7 @@ export const LSDatePicker = (props) => {
     if (!style.margin) style.margin = `8px`
 
     return (
-        <div className={`ls-date-picker-wrapper`} style={style}>
+        <div className={`ls-date-picker-wrapper-${theme}`} style={style}>
             <div className={`ls-date-picker-inner`}>
                 <div className={`ls-date-picker-header-text`}>{headerText}</div>
                 <div className={`ls-date-picker-calendar-wrapper`}>
@@ -61,3 +59,5 @@ export const LSDatePicker = (props) => {
         </div>
     )
 }
+
+export default LSDatePicker
