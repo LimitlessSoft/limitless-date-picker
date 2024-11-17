@@ -4,7 +4,7 @@ import './styles/ls-date-picker-common.css'
 import './styles/ls-date-picker-dark.css'
 import './styles/ls-date-picker-standard.css'
 
-const LSDatePicker = (props) => {
+function LSDatePicker(props) {
     const headerText = props?.headerText
     const theme = props?.theme ?? 'standard'
 
