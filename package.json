@@ -1,6 +1,6 @@
 {
   "name": "limitless-date-picker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "Simple date picker component",
   "source": "./src/index.js",
