@@ -1,34 +1,36 @@
+import React from 'react'
+
+import './styles/ls-date-picker-dark.css'
+import './styles/ls-date-picker-standard.css'
+
 export const LSDatePicker = (props) => {
-    const style = props?.style ?? {}
     const headerText = props?.headerText
-    const theme = props?.theme ?? `standard`
-    if (!style.backgroundColor) style.backgroundColor = `#f0f0f0`
-    if (!style.border) style.border = `1px solid #ccc`
-    if (!style.borderRadius) style.borderRadius = `4px`
-    if (!style.padding) style.padding = `8px`
-    if (!style.display) style.display = `inline-block`
-    if (!style.margin) style.margin = `8px`
+    const theme = props?.theme ?? 'standard'
 
     return (
-        <div className={`ls-date-picker-wrapper-${theme}`} style={style}>
-            <div className={`ls-date-picker-inner`}>
-                <div className={`ls-date-picker-header-text`}>{headerText}</div>
-                <div className={`ls-date-picker-calendar-wrapper`}>
-                    <div className={`ls-date-picker-calendar-inner`}>
-                        <div className={`ls-date-picker-calendar-header`}>
+        <div className={`ls-date-picker-wrapper-${theme}`}>
+            <div className={`ls-date-picker-inner-${theme}`}>
+                <div className={`ls-date-picker-header-text-${theme}`}>
+                    {headerText}
+                </div>
+                <div className={`ls-date-picker-calendar-wrapper-${theme}`}>
+                    <div className={`ls-date-picker-calendar-inner-${theme}`}>
+                        <div
+                            className={`ls-date-picker-calendar-header-${theme}`}
+                        >
                             <div
-                                className={`ls-date-picker-calendar-header-inner`}
+                                className={`ls-date-picker-calendar-header-inner-${theme}`}
                                 style={{
-                                    display: `flex`,
-                                    justifyContent: `space-between`,
-                                    padding: `4px 8px`,
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    padding: '4px 8px',
                                 }}
                             >
                                 <div
-                                    className={`ls-date-picker-calendar-header-left`}
+                                    className={`ls-date-picker-calendar-header-left-${theme}`}
                                 >
                                     <div
-                                        className={`ls-date-picker-calendar-header-left-inner`}
+                                        className={`ls-date-picker-calendar-header-left-inner-${theme}`}
                                     >
                                         ‹
                                     </div>
@@ -43,10 +45,10 @@ export const LSDatePicker = (props) => {
                                     </div>
                                 </div>
                                 <div
-                                    className={`ls-date-picker-calendar-header-right`}
+                                    className={`ls-date-picker-calendar-header-right-${theme}`}
                                 >
                                     <div
-                                        className={`ls-date-picker-calendar-header-right-inner`}
+                                        className={`ls-date-picker-calendar-header-right-inner-${theme}`}
                                     >
                                         ›
                                     </div>

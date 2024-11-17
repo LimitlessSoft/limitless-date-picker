@@ -1,11 +1,8 @@
 {
   "name": "limitless-date-picker",
   "version": "1.0.7",
-  "type": "module",
   "description": "Simple date picker component",
-  "scripts": {
-    "build": ""
-  },
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/LimitlessSoft/limitless-date-picker.git"
@@ -16,17 +13,24 @@
     "component",
     "limitless"
   ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
   "author": "LimitlessSoft",
   "license": "MIT",
   "dependencies": {
-    "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
-    "babel-loader": "^9.2.1",
-    "webpack-cli": "^5.1.4"
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "react-scripts": "^5.0.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
