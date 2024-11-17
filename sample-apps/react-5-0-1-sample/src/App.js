@@ -1,5 +1,6 @@
+import React from 'react'
 import './App.css'
-import { LSDatePicker } from 'limitless-date-picker'
+import LSDatePicker from 'limitless-date-picker'
 import 'limitless-date-picker/dist/index.css'
 
 function App() {
